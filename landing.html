@@ -4,9 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link href="./css/landing.css" rel="stylesheet">
+    <title>Hello, world!</title>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <title>Landing Page</title>
 </head>
+
+<header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="index.html"d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="./img/header_logo.png" height="50px" width="auto">
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        </ul>
+
+
+        <div class="text-end">
+          <button type="button" class="btn text-light me-2">My Account</button>
+          <button type="button" class="btn text-light me-2">Messages</button>
+          <button type="button" class="btn btn-danger">Log Out</button>
+        </div>
+      </div>
+    </div>
+  </header>
 <body>
+    <main>
+        <!-- Container for the top half with image and select dropdowns-->
+        <div class="py-5 text-center container-fluid bg-image">
+            <div class="row py-lg-5">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-dark text-white">Search For a Vehicle</h1>
+                    <div class="control-group">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Make</option>
+                                    <option value="1">Honda</option>
+                                    <option value="2">Kia</option>
+                                    <option value="3">Volkswagen</option>
+                                  </select>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Model</option>
+                                    <option value="1">Accord</option>
+                                    <option value="2">Optima</option>
+                                    <option value="3">Jetta</option>
+                                  </select>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center pt-3">
+                          <div class="col-md-12 mb-3">
+                                <button type="button" class="w-100 btn btn-danger">Search</button>
+                          </div>
+
+                        </div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Here we will put the 4 random car listings-->
+          <div class="container pt-3">
+
+            <!-- This is the boilerplate for a card that takes up 3 columns on the grid-->
+            <!-- each card must sit in its own col-md-3 inside this row-->
+            <div class="row">
+
+              <div class="col-md-3">
+                <div class="card shadow mb-3">
+                  <img src="./img/cars/civic.jpg" class="card-img-top"> 
+
+                  <div class="card-body">
+                    <h5 class="card-title">2021 Honda Civic Type R</h5>
+                    <h6>$40,685</h6>
+                    <a href="#" class="btn btn-danger">More Info</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card shadow mb-3">
+                  <img src="./img/cars/tiguan.jpg" class="card-img-top"> 
+
+                  <div class="card-body">
+                    <h5 class="card-title">2021 Volkswagen Tiguan</h5>
+                    <h6>$40,685</h6>
+                    <a href="#" class="btn btn-danger">More Info</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card shadow mb-3">
+                  <img src="./img/cars/wrx.jpeg" class="card-img-top">
+
+                  <div class="card-body">
+                    <h5 class="card-title">2021 Subaru WRX</h5>
+                    <h6>$40,685</h6>
+                    <a href="#" class="btn btn-danger">More Info</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card shadow mb-3">
+                  <img src="./img/cars/elise.jpeg" class="card-img-top">
+
+                  <div class="card-body">
+                    <h5 class="card-title">2021 Lotus Elise</h5>
+                    <h6>$40,685</h6>
+                    <a href="#" class="btn btn-danger">More Info</a>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div> <!--End card div-->
+
+          </div>
+    </main>
     
 </body>
 </html>
