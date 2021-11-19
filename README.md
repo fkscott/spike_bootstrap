@@ -12,7 +12,7 @@
 
 #### Practice and Experimentation
 
-​	For this experiment, I built each of my Figma mockups using bootstrap. The full site can be explored [here]("https://fkscott.github.io/spike_bootstrap/"). My github repo with the full source code can be explored [here](https://github.com/fkscott/spike_bootstrap). Below is the mockup of the homepage a user sees when logging in. I needed a navbar, dropdown menus, and cards to show featured vehicles. 
+​	For this experiment, I built each of my Figma mockups using bootstrap. The full site can be explored [here](https://fkscott.github.io/spike_bootstrap/). My github repo with the full source code can be explored [here](https://github.com/fkscott/spike_bootstrap). Below is the mockup of the homepage a user sees when logging in. I needed a navbar, dropdown menus, and cards to show featured vehicles. 
 
 <figure align="center">
   <img src="./writeup-img/home-desktop.png" alt="desktop homepage">
