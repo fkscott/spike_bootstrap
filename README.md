@@ -14,6 +14,8 @@
 
 ​	For this experiment, I built each of my Figma mockups using bootstrap. The full site can be explored [here](https://fkscott.github.io/spike_bootstrap/). My github repo with the full source code can be explored [here](https://github.com/fkscott/spike_bootstrap). Below is the mockup of the homepage a user sees when logging in. I needed a navbar, dropdown menus, and cards to show featured vehicles. 
 
+
+
 <figure align="center">
   <img src="./writeup-img/home-desktop.png" alt="desktop homepage">
   <figcaption>Figma mockup of the homepage at a desktop viewport</figcaption>
@@ -23,6 +25,7 @@
   <img src="./writeup-img/home-phone.png" alt="desktop homepage">
   <figcaption>Figma mockup of the homepage at a mobile screen size</figcaption>
 </figure>
+​	
 
 ​	I began by studying Bootstraps plentiful examples for a reusable component we needed: a navbar. Below is a pro Bootstrap provides classes for responsible navigation bars that are customizable to your liking. The declaration was 
 
@@ -33,6 +36,8 @@
 ```
 
 The most useful of these was the `navbar-expand-md` class, which means the navbar is full width until it collapses at the medium breakpoint of 768px or less.
+
+
 
 <figure align="center">
   <img src="./writeup-img/navbar-full.png" alt="navbar at full width">
@@ -45,7 +50,8 @@ The most useful of these was the `navbar-expand-md` class, which means the navba
   <figcaption text-align="center">Navbaar at medium breakpoint</figcaption>
 </figure>
 
-Breakpoints in Bootstrap also work for other page components, which I would need for my cards and the search options. I placed my cards in a container div that contained a grid with one row and four columns. Each column had a similar declaration:
+
+​	Breakpoints in Bootstrap also work for other page components, which I would need for my cards and the search options. I placed my cards in a container div that contained a grid with one row and four columns. Each column had a similar declaration:
 
 ```HTML
 <div class="col-md-3">
@@ -61,7 +67,11 @@ Breakpoints in Bootstrap also work for other page components, which I would need
 </div>
 ```
 
-The `col-md-3` class means that each card will take up 3 columns on Bootstrap's 12 column grid until the medium breakpoint. At the medium breakpoint and below, the card will take up the full width of the grid.
+
+
+​	The `col-md-3` class means that each card will take up 3 columns on Bootstrap's 12 column grid until the medium breakpoint. At the medium breakpoint and below, the card will take up the full width of the grid.
+
+
 
 <figure align="center">
 	<img src="./writeup-img/cards-home.png" alt="Cards at desktop viewport">
@@ -75,7 +85,8 @@ The `col-md-3` class means that each card will take up 3 columns on Bootstrap's 
 
 
 
-The rest of the pages consisted of similar components. First I referenced my Figma designs and checked how many columns an element took up. Then, I added the correct column class for each component on my page and let Bootstrap take care of the media queries. This way I didn't have to write any CSS besides the background image for the search box. 
+
+​	The rest of the pages consisted of similar components. First I referenced my Figma designs and checked how many columns an element took up. Then, I added the correct column class for each component on my page and let Bootstrap take care of the media queries. This way I didn't have to write any CSS besides the background image for the search box. 
 
 
 
